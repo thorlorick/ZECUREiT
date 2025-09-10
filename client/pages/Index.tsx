@@ -196,7 +196,7 @@ export default function Index() {
               desc: "Recipients decrypt with your policies and audit trail.",
             },
           ].map((s) => (
-            <div key={s.step} className="rounded-xl border bg-card p-6 shadow-sm">
+            <div key={s.step} className="rounded-xl border bg-card p-6 shadow-sm text-center">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold">
                 {s.step}
               </div>
