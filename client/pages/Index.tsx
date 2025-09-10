@@ -49,114 +49,116 @@ export default function Index() {
   return (
     <div>
       <section className="relative overflow-hidden">
-                <div className="container grid gap-12 py-16 md:grid-cols-2 md:py-24 lg:py-28">
-          <div className="space-y-6">
-            <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground ring-1 ring-inset ring-border">
-              ZECUREiT by AKCode
-            </span>
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-white">
-              Encrypt before you upload.
-              <br />
-              Share with confidence.
-            </h1>
-            <p className="text-lg text-white/90 max-w-prose">
-              ZECUREiT is a revolutionary security product that automatically
-              encrypts documents before they are uploaded to any file‑sharing
-              platform. Keep attorney‑client privilege intact and meet
-              regulatory obligations with zero friction.
-            </p>
-            <ul className="grid gap-3 text-sm">
-              <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Local, client‑side encryption before transfer</span></li>
-              <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Seamless with your existing cloud tools</span></li>
-              <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Designed for small‑to‑mid sized firms</span></li>
-            </ul>
-            <div className="flex items-center gap-3">
-                            <a href="#features" className="text-sm font-medium text-foreground/70 hover:text-foreground">Explore features</a>
-            </div>
-            <div className="flex items-center gap-6 pt-4" id="security">
-              <Badge label="HIPAA‑ready" />
-              <Badge label="GDPR" />
-              <Badge label="SOC 2" />
+        <div className="container py-16 md:py-24 lg:py-28">
+          <div className="min-h-[70vh] flex items-center">
+            <div className="space-y-6 w-full">
+              <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground ring-1 ring-inset ring-border">
+                ZECUREiT by AKCode
+              </span>
+              <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight text-white">
+                Encrypt before you upload.
+                <br />
+                Share with confidence.
+              </h1>
+              <p className="text-lg text-white/90 max-w-prose">
+                ZECUREiT is a revolutionary security product that automatically
+                encrypts documents before they are uploaded to any file‑sharing
+                platform. Keep attorney‑client privilege intact and meet
+                regulatory obligations with zero friction.
+              </p>
+              <div className="flex items-center gap-6 pt-4" id="security">
+                <Badge label="HIPAA‑ready" />
+                <Badge label="GDPR" />
+                <Badge label="SOC 2" />
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div id="request-demo" className="">
-            <div className="rounded-xl border border-[#f0d86e]/40 bg-[#FEF3BE] p-6 shadow-xl text-slate-900">
-              <h2 className="text-xl font-semibold text-slate-900">Request a live demo</h2>
-              <p className="mt-1 text-sm text-slate-700">
-                Tell us about your organization and we'll reach out with a
-                personalized walkthrough.
-              </p>
+      {/* Full width form section */}
+      <section id="request-demo" className="w-full bg-[#FEF3BE] py-12">
+        <div className="max-w-full mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-2xl font-semibold text-slate-900">Request a live demo</h2>
+            <p className="mt-1 text-sm text-slate-700">
+              Tell us about your organization and we'll reach out with a
+              personalized walkthrough.
+            </p>
 
-              {submitted ? (
-                <div className="mt-6 rounded-md bg-green-50 p-4 text-green-900 ring-1 ring-green-200">
-                  Thanks! Your request has been received. We will contact you
-                  shortly.
+            {submitted ? (
+              <div className="mt-6 rounded-md bg-green-50 p-4 text-green-900 ring-1 ring-green-200">
+                Thanks! Your request has been received. We will contact you
+                shortly.
+              </div>
+            ) : (
+              <form className="mt-6 grid gap-4" onSubmit={handleSubmit(onSubmit)}>
+                <div className="grid gap-2">
+                  <Label htmlFor="name" className="text-slate-900 font-semibold">Full name</Label>
+                  <Input id="name" placeholder="Jane Doe" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("name")} />
+                  {errors.name && <FieldError message={errors.name.message} />}
                 </div>
-              ) : (
-                <form className="mt-6 grid gap-4" onSubmit={handleSubmit(onSubmit)}>
-                  <div className="grid gap-2">
-                    <Label htmlFor="name" className="text-slate-900 font-semibold">Full name</Label>
-                    <Input id="name" placeholder="Jane Doe" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("name")} />
-                    {errors.name && <FieldError message={errors.name.message} />}
-                  </div>
-                  <div className="grid gap-2">
-                    <Label htmlFor="email" className="text-slate-900 font-semibold">Work email</Label>
-                    <Input id="email" type="email" placeholder="jane@firm.com" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("email")} />
-                    {errors.email && <FieldError message={errors.email.message} />}
-                  </div>
-                  <div className="grid gap-2">
-                    <Label htmlFor="company" className="text-slate-900 font-semibold">Company</Label>
-                    <Input id="company" placeholder="Acme LLP" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("company")} />
-                    {errors.company && <FieldError message={errors.company.message} />}
-                  </div>
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div className="grid gap-2">
-                      <Label htmlFor="role" className="text-slate-900 font-semibold">Role</Label>
-                      <Input id="role" placeholder="Partner, IT Lead, Counsel" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("role")} />
-                    </div>
-                    <div className="grid gap-2">
-                      <Label htmlFor="teamSize" className="text-slate-900 font-semibold">Team size</Label>
-                      <Input id="teamSize" placeholder="25" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("teamSize")} />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div className="grid gap-2">
-                      <Label htmlFor="phone" className="text-slate-900 font-semibold">Phone (optional)</Label>
-                      <Input id="phone" placeholder="(555) 123‑4567" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("phone")} />
-                    </div>
-                  </div>
-                  <div className="grid gap-2">
-                    <Label htmlFor="useCase" className="text-slate-900 font-semibold">Primary use case</Label>
-                    <Textarea id="useCase" placeholder="Briefly describe how your team shares sensitive documents today" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("useCase")} />
-                  </div>
 
-                  <fieldset className="grid gap-3">
-                    <legend className="text-sm font-medium text-slate-800">Compliance priorities</legend>
-                    <div className="grid gap-3 sm:grid-cols-3">
-                      {(["HIPAA", "GDPR", "SOC 2"] as const).map((label) => (
-                        <CheckboxItem key={label} value={label} register={register} />
-                      ))}
-                    </div>
-                  </fieldset>
+                <div className="grid gap-2">
+                  <Label htmlFor="email" className="text-slate-900 font-semibold">Work email</Label>
+                  <Input id="email" type="email" placeholder="jane@firm.com" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("email")} />
+                  {errors.email && <FieldError message={errors.email.message} />}
+                </div>
 
-                  <div className="flex items-start gap-3">
-                    <input id="agree" type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-400 bg-transparent text-primary focus:ring-primary checked:bg-primary checked:border-primary" {...register("agreeToPrivacy")} />
-                    <Label htmlFor="agree" className="text-sm text-slate-700">
-                      I agree to the privacy policy and to be contacted about my
-                      request.
-                    </Label>
+                <div className="grid gap-2">
+                  <Label htmlFor="company" className="text-slate-900 font-semibold">Company</Label>
+                  <Input id="company" placeholder="Acme LLP" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("company")} />
+                  {errors.company && <FieldError message={errors.company.message} />}
+                </div>
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div className="grid gap-2">
+                    <Label htmlFor="role" className="text-slate-900 font-semibold">Role</Label>
+                    <Input id="role" placeholder="Partner, IT Lead, Counsel" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("role")} />
                   </div>
-                  {errors.agreeToPrivacy && (
-                    <FieldError message={errors.agreeToPrivacy.message as string} />
-                  )}
+                  <div className="grid gap-2">
+                    <Label htmlFor="teamSize" className="text-slate-900 font-semibold">Team size</Label>
+                    <Input id="teamSize" placeholder="25" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("teamSize")} />
+                  </div>
+                </div>
 
-                  <Button type="submit" className="mt-2" disabled={isSubmitting}>
-                    {isSubmitting ? "Submitting..." : "Request demo"}
-                  </Button>
-                </form>
-              )}
-            </div>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div className="grid gap-2">
+                    <Label htmlFor="phone" className="text-slate-900 font-semibold">Phone (optional)</Label>
+                    <Input id="phone" placeholder="(555) 123‑4567" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("phone")} />
+                  </div>
+                </div>
+
+                <div className="grid gap-2">
+                  <Label htmlFor="useCase" className="text-slate-900 font-semibold">Primary use case</Label>
+                  <Textarea id="useCase" placeholder="Briefly describe how your team shares sensitive documents today" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("useCase")} />
+                </div>
+
+                <fieldset className="grid gap-3">
+                  <legend className="text-sm font-medium text-slate-800">Compliance priorities</legend>
+                  <div className="grid gap-3 sm:grid-cols-3">
+                    {(["HIPAA", "GDPR", "SOC 2"] as const).map((label) => (
+                      <CheckboxItem key={label} value={label} register={register} />
+                    ))}
+                  </div>
+                </fieldset>
+
+                <div className="flex items-start gap-3">
+                  <input id="agree" type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-400 bg-transparent text-primary focus:ring-primary checked:bg-primary checked:border-primary" {...register("agreeToPrivacy")} />
+                  <Label htmlFor="agree" className="text-sm text-slate-700">
+                    I agree to the privacy policy and to be contacted about my
+                    request.
+                  </Label>
+                </div>
+                {errors.agreeToPrivacy && (
+                  <FieldError message={errors.agreeToPrivacy.message as string} />
+                )}
+
+                <Button type="submit" className="mt-2 w-full md:w-auto" disabled={isSubmitting}>
+                  {isSubmitting ? "Submitting..." : "Request demo"}
+                </Button>
+              </form>
+            )}
           </div>
         </div>
       </section>
