@@ -49,8 +49,8 @@ export default function Index() {
   return (
     <div>
       <section className="relative overflow-hidden">
-        <div className="container py-16 md:py-24 lg:py-28">
-          <div className="min-h-[60vh] flex items-center">
+        <div className="container py-8 md:py-12 lg:py-16">
+          <div className="min-h-[40vh] flex items-center">
             <div className="w-full">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white uppercase">
                 ENCRYPT FIRST, PROTECT ALWAYS
