@@ -26,14 +26,7 @@ export default function SiteHeader() {
             Security
           </a>
         </nav>
-        <div className="flex items-center gap-3">
-          <a
-            href="#request-demo"
-            className="inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          >
-            Request a demo
-          </a>
-        </div>
+        <div className="flex items-center gap-3"></div>
       </div>
     </header>
   );
