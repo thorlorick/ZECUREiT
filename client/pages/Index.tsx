@@ -182,8 +182,8 @@ export default function Index() {
           {[
             {
               step: "1",
-              title: "Select your files",
-              desc: "Choose files as usual in your cloud drive or DMS.",
+              title: "Choose files on your local computer",
+              desc: "Select files from your local computer — ZECUREiT encrypts them before any upload.",
             },
             {
               step: "2",
