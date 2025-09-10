@@ -2,7 +2,14 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
-import { Check, FileLock2, FolderLock, ShieldCheck, Sparkles, Upload } from "lucide-react";
+import {
+  Check,
+  FileLock2,
+  FolderLock,
+  ShieldCheck,
+  Sparkles,
+  Upload,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -56,7 +63,9 @@ export default function Index() {
                 ENCRYPT FIRST, PROTECT ALWAYS
               </h1>
               <p className="mt-4 text-lg text-white/90 max-w-3xl">
-                ZECUREiT safeguards your documents from the moment they’re created, keeping client privilege secure and compliance effortless.
+                ZECUREiT safeguards your documents from the moment they’re
+                created, keeping client privilege secure and compliance
+                effortless.
               </p>
             </div>
           </div>
@@ -70,74 +79,180 @@ export default function Index() {
             {/* Left: Form column (narrow) */}
             <div className="w-full md:max-w-md">
               <div className="rounded-xl border border-[#f0d86e]/40 bg-[#D8F3E9] p-6 shadow-xl text-slate-900">
-                <h2 className="text-2xl font-semibold text-slate-900">Request a live demo</h2>
-                <p className="mt-1 text-sm text-slate-700">Tell us about your organization and we'll reach out with a personalized walkthrough.</p>
+                <h2 className="text-2xl font-semibold text-slate-900">
+                  Request a live demo
+                </h2>
+                <p className="mt-1 text-sm text-slate-700">
+                  Tell us about your organization and we'll reach out with a
+                  personalized walkthrough.
+                </p>
 
                 {submitted ? (
                   <div className="mt-6 rounded-md bg-green-50 p-4 text-green-900 ring-1 ring-green-200">
-                    Thanks! Your request has been received. We will contact you shortly.
+                    Thanks! Your request has been received. We will contact you
+                    shortly.
                   </div>
                 ) : (
-                  <form className="mt-6 grid gap-4" onSubmit={handleSubmit(onSubmit)}>
+                  <form
+                    className="mt-6 grid gap-4"
+                    onSubmit={handleSubmit(onSubmit)}
+                  >
                     <div className="grid gap-2">
-                      <Label htmlFor="name" className="text-slate-900 font-semibold">Full name</Label>
-                      <Input id="name" placeholder="Jane Doe" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("name")} />
-                      {errors.name && <FieldError message={errors.name.message} />}
+                      <Label
+                        htmlFor="name"
+                        className="text-slate-900 font-semibold"
+                      >
+                        Full name
+                      </Label>
+                      <Input
+                        id="name"
+                        placeholder="Jane Doe"
+                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40"
+                        {...register("name")}
+                      />
+                      {errors.name && (
+                        <FieldError message={errors.name.message} />
+                      )}
                     </div>
 
                     <div className="grid gap-2">
-                      <Label htmlFor="email" className="text-slate-900 font-semibold">Work email</Label>
-                      <Input id="email" type="email" placeholder="jane@firm.com" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("email")} />
-                      {errors.email && <FieldError message={errors.email.message} />}
+                      <Label
+                        htmlFor="email"
+                        className="text-slate-900 font-semibold"
+                      >
+                        Work email
+                      </Label>
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="jane@firm.com"
+                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40"
+                        {...register("email")}
+                      />
+                      {errors.email && (
+                        <FieldError message={errors.email.message} />
+                      )}
                     </div>
 
                     <div className="grid gap-2">
-                      <Label htmlFor="company" className="text-slate-900 font-semibold">Company</Label>
-                      <Input id="company" placeholder="Acme LLP" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("company")} />
-                      {errors.company && <FieldError message={errors.company.message} />}
+                      <Label
+                        htmlFor="company"
+                        className="text-slate-900 font-semibold"
+                      >
+                        Company
+                      </Label>
+                      <Input
+                        id="company"
+                        placeholder="Acme LLP"
+                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40"
+                        {...register("company")}
+                      />
+                      {errors.company && (
+                        <FieldError message={errors.company.message} />
+                      )}
                     </div>
 
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                       <div className="grid gap-2">
-                        <Label htmlFor="role" className="text-slate-900 font-semibold">Role</Label>
-                        <Input id="role" placeholder="Partner, IT Lead, Counsel" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("role")} />
+                        <Label
+                          htmlFor="role"
+                          className="text-slate-900 font-semibold"
+                        >
+                          Role
+                        </Label>
+                        <Input
+                          id="role"
+                          placeholder="Partner, IT Lead, Counsel"
+                          className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40"
+                          {...register("role")}
+                        />
                       </div>
                       <div className="grid gap-2">
-                        <Label htmlFor="teamSize" className="text-slate-900 font-semibold">Team size</Label>
-                        <Input id="teamSize" placeholder="25" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("teamSize")} />
+                        <Label
+                          htmlFor="teamSize"
+                          className="text-slate-900 font-semibold"
+                        >
+                          Team size
+                        </Label>
+                        <Input
+                          id="teamSize"
+                          placeholder="25"
+                          className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40"
+                          {...register("teamSize")}
+                        />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                       <div className="grid gap-2">
-                        <Label htmlFor="phone" className="text-slate-900 font-semibold">Phone (optional)</Label>
-                        <Input id="phone" placeholder="(555) 123‑4567" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("phone")} />
+                        <Label
+                          htmlFor="phone"
+                          className="text-slate-900 font-semibold"
+                        >
+                          Phone (optional)
+                        </Label>
+                        <Input
+                          id="phone"
+                          placeholder="(555) 123‑4567"
+                          className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40"
+                          {...register("phone")}
+                        />
                       </div>
                     </div>
 
                     <div className="grid gap-2">
-                      <Label htmlFor="useCase" className="text-slate-900 font-semibold">Primary use case</Label>
-                      <Textarea id="useCase" placeholder="Briefly describe how your team shares sensitive documents today" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("useCase")} />
+                      <Label
+                        htmlFor="useCase"
+                        className="text-slate-900 font-semibold"
+                      >
+                        Primary use case
+                      </Label>
+                      <Textarea
+                        id="useCase"
+                        placeholder="Briefly describe how your team shares sensitive documents today"
+                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40"
+                        {...register("useCase")}
+                      />
                     </div>
 
                     <fieldset className="grid gap-3">
-                      <legend className="text-sm font-medium text-slate-800">Compliance priorities</legend>
+                      <legend className="text-sm font-medium text-slate-800">
+                        Compliance priorities
+                      </legend>
                       <div className="grid gap-3 sm:grid-cols-3">
                         {(["HIPAA", "GDPR", "SOC 2"] as const).map((label) => (
-                          <CheckboxItem key={label} value={label} register={register} />
+                          <CheckboxItem
+                            key={label}
+                            value={label}
+                            register={register}
+                          />
                         ))}
                       </div>
                     </fieldset>
 
                     <div className="flex items-start gap-3">
-                      <input id="agree" type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-400 bg-transparent text-primary focus:ring-primary checked:bg-primary checked:border-primary" {...register("agreeToPrivacy")} />
-                      <Label htmlFor="agree" className="text-sm text-slate-700">I agree to the privacy policy and to be contacted about my request.</Label>
+                      <input
+                        id="agree"
+                        type="checkbox"
+                        className="mt-1 h-4 w-4 rounded border-slate-400 bg-transparent text-primary focus:ring-primary checked:bg-primary checked:border-primary"
+                        {...register("agreeToPrivacy")}
+                      />
+                      <Label htmlFor="agree" className="text-sm text-slate-700">
+                        I agree to the privacy policy and to be contacted about
+                        my request.
+                      </Label>
                     </div>
                     {errors.agreeToPrivacy && (
-                      <FieldError message={errors.agreeToPrivacy.message as string} />
+                      <FieldError
+                        message={errors.agreeToPrivacy.message as string}
+                      />
                     )}
 
-                    <Button type="submit" className="mt-2 w-full md:w-auto" disabled={isSubmitting}>
+                    <Button
+                      type="submit"
+                      className="mt-2 w-full md:w-auto"
+                      disabled={isSubmitting}
+                    >
                       {isSubmitting ? "Submitting..." : "Request demo"}
                     </Button>
                   </form>
@@ -147,12 +262,28 @@ export default function Index() {
 
             {/* Right: Description column */}
             <div className="prose prose-lg max-w-none text-white/90">
-              <p className="text-lg">ZECUREiT is a revolutionary security product that automatically encrypts documents before they are uploaded to the cloud. Keep attorney‑client privilege intact and meet regulatory obligations with zero friction.</p>
+              <p className="text-lg">
+                ZECUREiT is a revolutionary security product that automatically
+                encrypts documents before they are uploaded to the cloud. Keep
+                attorney‑client privilege intact and meet regulatory obligations
+                with zero friction.
+              </p>
 
               <ul className="mt-6 space-y-3 text-white">
-                <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Local, client‑side encryption before transfer</span></li>
-                <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Seamless and secure uploads to your Dropbox folders</span></li>
-                <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Designed for small‑to‑mid sized firms</span></li>
+                <li className="flex items-start gap-3">
+                  <Check className="mt-0.5 h-5 w-5 text-primary" />
+                  <span>Local, client‑side encryption before transfer</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="mt-0.5 h-5 w-5 text-primary" />
+                  <span>
+                    Seamless and secure uploads to your Dropbox folders
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="mt-0.5 h-5 w-5 text-primary" />
+                  <span>Designed for small‑to‑mid sized firms</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -161,19 +292,45 @@ export default function Index() {
 
       <section id="features" className="container py-16 md:py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Built for security, designed for simplicity</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Built for security, designed for simplicity
+          </h2>
           <p className="mt-3 text-muted-foreground">
-            ZECUREiT integrates seamlessly into your workflow while enforcing strong
-            encryption and access controls.
+            ZECUREiT integrates seamlessly into your workflow while enforcing
+            strong encryption and access controls.
           </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <Feature icon={FileLock2} title="Client‑side encryption" desc="Documents are encrypted on your device before any upload or sync." />
-          <Feature icon={Upload} title="Works with your tools" desc="Securely upload to Dropbox — automatically encrypted, zero hassle." />
-          <Feature icon={ShieldCheck} title="Zero‑knowledge keys" desc="Only your organization holds the keys. We cannot access your data." />
-          <Feature icon={FolderLock} title="Granular access" desc="Share securely with per‑file permissions and audit logs." />
-          <Feature icon={Sparkles} title="Frictionless UX" desc="One‑click protection with automatic key management for teams." />
-          <Feature icon={Check} title="Compliance ready" desc="Support for HIPAA, GDPR and SOC 2 workflows out of the box." />
+          <Feature
+            icon={FileLock2}
+            title="Client‑side encryption"
+            desc="Documents are encrypted on your device before any upload or sync."
+          />
+          <Feature
+            icon={Upload}
+            title="Works with your tools"
+            desc="Securely upload to Dropbox — automatically encrypted, zero hassle."
+          />
+          <Feature
+            icon={ShieldCheck}
+            title="Zero‑knowledge keys"
+            desc="Only your organization holds the keys. We cannot access your data."
+          />
+          <Feature
+            icon={FolderLock}
+            title="Granular access"
+            desc="Share securely with per‑file permissions and audit logs."
+          />
+          <Feature
+            icon={Sparkles}
+            title="Frictionless UX"
+            desc="One‑click protection with automatic key management for teams."
+          />
+          <Feature
+            icon={Check}
+            title="Compliance ready"
+            desc="Support for HIPAA, GDPR and SOC 2 workflows out of the box."
+          />
         </div>
       </section>
 
@@ -196,7 +353,10 @@ export default function Index() {
               desc: "Recipients decrypt with your policies and audit trail.",
             },
           ].map((s) => (
-            <div key={s.step} className="rounded-xl border bg-card p-6 shadow-sm text-center">
+            <div
+              key={s.step}
+              className="rounded-xl border bg-card p-6 shadow-sm text-center"
+            >
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold">
                 {s.step}
               </div>
@@ -210,7 +370,15 @@ export default function Index() {
   );
 }
 
-function Feature({ icon: Icon, title, desc }: { icon: React.ComponentType<{ className?: string }>; title: string; desc: string }) {
+function Feature({
+  icon: Icon,
+  title,
+  desc,
+}: {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  desc: string;
+}) {
   return (
     <div className="rounded-xl border bg-card p-6 shadow-sm">
       <Icon className="h-6 w-6 text-primary" />
@@ -234,11 +402,26 @@ function FieldError({ message }: { message?: string }) {
   return <p className="text-sm text-destructive">{message}</p>;
 }
 
-function CheckboxItem({ value, register }: { value: string; register: ReturnType<typeof useForm>["register"] }) {
+function CheckboxItem({
+  value,
+  register,
+}: {
+  value: string;
+  register: ReturnType<typeof useForm>["register"];
+}) {
   const id = `comp-${value}`;
   return (
-    <label htmlFor={id} className="flex cursor-pointer items-center gap-2 rounded-md border p-2 hover:bg-accent">
-      <input id={id} type="checkbox" value={value} className="h-4 w-4 rounded border-slate-400 bg-transparent text-primary focus:ring-primary checked:bg-primary checked:border-primary" {...register("compliance")} />
+    <label
+      htmlFor={id}
+      className="flex cursor-pointer items-center gap-2 rounded-md border p-2 hover:bg-accent"
+    >
+      <input
+        id={id}
+        type="checkbox"
+        value={value}
+        className="h-4 w-4 rounded border-slate-400 bg-transparent text-primary focus:ring-primary checked:bg-primary checked:border-primary"
+        {...register("compliance")}
+      />
       <span className="text-sm text-slate-700">{value}</span>
     </label>
   );
