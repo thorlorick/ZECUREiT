@@ -52,7 +52,7 @@ export default function Index() {
         <div className="container py-16 md:py-24 lg:py-28">
           <div className="min-h-[60vh] flex items-center">
             <div className="w-full">
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tight leading-tight text-white uppercase">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white uppercase">
                 ENCRYPT FIRST, PROTECT ALWAYS
               </h1>
               <p className="mt-4 text-lg text-white/90 max-w-3xl">
