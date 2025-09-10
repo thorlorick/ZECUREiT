@@ -47,20 +47,19 @@ export default function Index() {
   }
 
   return (
-    <div className="bg-gradient-to-b from-slate-50 to-white">
+    <div className="bg-[linear-gradient(135deg,#384F92_0%,#6B82D6_60%)] text-white">
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 opacity-30 bg-[radial-gradient(600px_600px_at_20%_10%,hsl(var(--accent))_0%,transparent_60%),radial-gradient(600px_600px_at_90%_20%,hsl(var(--primary))_0%,transparent_60%)]"></div>
-        <div className="container grid gap-12 py-16 md:grid-cols-2 md:py-24 lg:py-28">
+                <div className="container grid gap-12 py-16 md:grid-cols-2 md:py-24 lg:py-28">
           <div className="space-y-6">
             <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground ring-1 ring-inset ring-border">
               ZECUREiT by AKCode
             </span>
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-white">
               Encrypt before you upload.
               <br />
               Share with confidence.
             </h1>
-            <p className="text-lg text-muted-foreground max-w-prose">
+            <p className="text-lg text-white/90 max-w-prose">
               ZECUREiT is a revolutionary security product that automatically
               encrypts documents before they are uploaded to any file‑sharing
               platform. Keep attorney‑client privilege intact and meet
@@ -72,10 +71,7 @@ export default function Index() {
               <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Designed for small‑to‑mid sized firms</span></li>
             </ul>
             <div className="flex items-center gap-3">
-              <a href="#request-demo">
-                <Button className="px-6">Request a demo</Button>
-              </a>
-              <a href="#features" className="text-sm font-medium text-foreground/70 hover:text-foreground">Explore features</a>
+                            <a href="#features" className="text-sm font-medium text-foreground/70 hover:text-foreground">Explore features</a>
             </div>
             <div className="flex items-center gap-6 pt-4" id="security">
               <Badge label="HIPAA‑ready" />
