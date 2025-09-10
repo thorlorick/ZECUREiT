@@ -177,7 +177,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="how-it-works" className="bg-muted/30 py-16 md:py-24">
+      <section id="how-it-works" className="bg-[#0f1724] py-16 md:py-24">
         <div className="container grid gap-10 md:grid-cols-3">
           {[
             {
