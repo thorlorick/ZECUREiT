@@ -53,7 +53,7 @@ export default function Index() {
           <div className="min-h-[60vh] flex items-center">
             <div className="w-full">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white">
-                Encrypt first, protect always — ZECUREiT safeguards your documents from the moment they’re created, keeping client privilege secure and compliance effortless.
+                Encrypt first, protect always
               </h1>
             </div>
           </div>
