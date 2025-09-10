@@ -47,7 +47,7 @@ export default function Index() {
   }
 
   return (
-    <div className="bg-[linear-gradient(135deg,#384F92_0%,#6B82D6_60%)] text-white">
+    <div>
       <section className="relative overflow-hidden">
                 <div className="container grid gap-12 py-16 md:grid-cols-2 md:py-24 lg:py-28">
           <div className="space-y-6">
