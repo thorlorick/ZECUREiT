@@ -81,7 +81,7 @@ export default function Index() {
           </div>
 
           <div id="request-demo" className="">
-            <div className="rounded-xl border border-[#f0d86e]/40 bg-[linear-gradient(180deg,#FEF3BE_0%,#FECB03_100%)] p-6 shadow-xl text-slate-900">
+            <div className="rounded-xl border border-[#f0d86e]/40 bg-[#FEF3BE] p-6 shadow-xl text-slate-900">
               <h2 className="text-xl font-semibold text-slate-900">Request a live demo</h2>
               <p className="mt-1 text-sm text-slate-700">
                 Tell us about your organization and we'll reach out with a
