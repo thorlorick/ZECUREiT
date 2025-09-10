@@ -151,7 +151,7 @@ export default function Index() {
 
               <ul className="mt-6 space-y-3 text-white">
                 <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Local, client‑side encryption before transfer</span></li>
-                <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Seamless with your existing cloud tools</span></li>
+                <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Seamless and secure uploads to your Dropbox folders</span></li>
                 <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Designed for small‑to‑mid sized firms</span></li>
               </ul>
             </div>
