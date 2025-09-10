@@ -340,7 +340,7 @@ export default function Index() {
             {
               step: "1",
               title: "Choose files on your local computer",
-              desc: "Select files from your local computer, ZECUREiT encrypts them before any upload.",
+              desc: "Select files from your local computer, ZECUREiT encrypts them before any upload.                                                                            ",
             },
             {
               step: "2",
