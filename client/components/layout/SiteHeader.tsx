@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-transparent">
+    <header className="sticky top-0 z-40 w-full border-b border-slate-800 bg-[#0f1724]">
       <div className="container flex h-16 items-center">
         <div className="flex items-center gap-3">
           <span className="text-white font-semibold">AKCode</span>
