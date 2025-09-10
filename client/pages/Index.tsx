@@ -6,7 +6,6 @@ import { Check, FileLock2, FolderLock, ShieldCheck, Sparkles, Upload } from "luc
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { DemoRequestPayload } from "@shared/api";
 
