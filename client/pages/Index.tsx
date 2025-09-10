@@ -52,9 +52,12 @@ export default function Index() {
         <div className="container py-16 md:py-24 lg:py-28">
           <div className="min-h-[60vh] flex items-center">
             <div className="w-full">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white">
-                Encrypt first, protect always
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white uppercase">
+                ENCRYPT FIRST, PROTECT ALWAYS
               </h1>
+              <p className="mt-4 text-lg text-white/90 max-w-3xl">
+                ZECUREiT safeguards your documents from the moment they’re created, keeping client privilege secure and compliance effortless.
+              </p>
             </div>
           </div>
         </div>
