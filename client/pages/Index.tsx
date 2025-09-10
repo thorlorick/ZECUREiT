@@ -64,7 +64,7 @@ export default function Index() {
       </section>
 
       {/* Two-column form + description section */}
-      <section id="request-demo" className="w-full py-12">
+      <section id="request-demo" className="w-full py-8">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid gap-8 md:grid-cols-2 items-start">
             {/* Left: Form column (narrow) */}
