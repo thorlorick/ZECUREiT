@@ -169,7 +169,7 @@ export default function Index() {
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <Feature icon={FileLock2} title="Client‑side encryption" desc="Documents are encrypted on your device before any upload or sync." />
-          <Feature icon={Upload} title="Works with your tools" desc="Dropbox, Google Drive, OneDrive and more — no change management." />
+          <Feature icon={Upload} title="Works with your tools" desc="Securely upload to Dropbox — automatically encrypted, zero hassle." />
           <Feature icon={ShieldCheck} title="Zero‑knowledge keys" desc="Only your organization holds the keys. We cannot access your data." />
           <Feature icon={FolderLock} title="Granular access" desc="Share securely with per‑file permissions and audit logs." />
           <Feature icon={Sparkles} title="Frictionless UX" desc="One‑click protection with automatic key management for teams." />
