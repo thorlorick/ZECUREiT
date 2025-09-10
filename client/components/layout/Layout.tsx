@@ -4,7 +4,7 @@ import SiteFooter from "./SiteFooter";
 
 export default function Layout() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-[linear-gradient(135deg,#384F92_0%,#6B82D6_45%,#FECB03_100%)] text-white">
       <SiteHeader />
       <main className="flex-1">
         <Outlet />
