@@ -147,7 +147,7 @@ export default function Index() {
 
             {/* Right: Description column */}
             <div className="prose prose-lg max-w-none text-white/90">
-              <p className="text-lg">ZECUREiT is a revolutionary security product that automatically encrypts documents before they are uploaded to any file‑sharing platform. Keep attorney‑client privilege intact and meet regulatory obligations with zero friction.</p>
+              <p className="text-lg">ZECUREiT is a revolutionary security product that automatically encrypts documents before they are uploaded to the cloud. Keep attorney‑client privilege intact and meet regulatory obligations with zero friction.</p>
 
               <ul className="mt-6 space-y-3 text-white">
                 <li className="flex items-start gap-3"><Check className="mt-0.5 h-5 w-5 text-primary" /><span>Local, client‑side encryption before transfer</span></li>
