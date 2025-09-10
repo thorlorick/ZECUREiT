@@ -145,7 +145,7 @@ export default function Index() {
                   </fieldset>
 
                   <div className="flex items-start gap-3">
-                    <Checkbox id="agree" {...register("agreeToPrivacy")} />
+                    <input id="agree" type="checkbox" className="mt-1 h-4 w-4 rounded border-primary text-primary focus:ring-ring" {...register("agreeToPrivacy")} />
                     <Label htmlFor="agree" className="text-sm text-muted-foreground">
                       I agree to the privacy policy and to be contacted about my
                       request.
@@ -244,7 +244,7 @@ function CheckboxItem({ value, register }: { value: string; register: ReturnType
   const id = `comp-${value}`;
   return (
     <label htmlFor={id} className="flex cursor-pointer items-center gap-2 rounded-md border p-2 hover:bg-accent">
-      <Checkbox id={id} value={value} {...register("compliance")} />
+      <input id={id} type="checkbox" value={value} className="h-4 w-4 rounded border-primary text-primary focus:ring-ring" {...register("compliance")} />
       <span className="text-sm">{value}</span>
     </label>
   );
