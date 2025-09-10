@@ -1,6 +1,6 @@
 export default function SiteFooter() {
   return (
-    <footer className="border-t bg-white/10 py-10 backdrop-blur">
+    <footer className="border-t border-slate-800 bg-[#0f1724] py-10">
       <div className="container grid gap-6 md:grid-cols-2">
         <div className="space-y-2">
           <p className="text-xl font-semibold text-white">ZECUREiT by AKCode</p>
