@@ -81,9 +81,9 @@ export default function Index() {
           </div>
 
           <div id="request-demo" className="">
-            <div className="rounded-xl border border-white/10 bg-white/6 p-6 shadow-xl backdrop-blur-sm text-white">
-              <h2 className="text-xl font-semibold text-white">Request a live demo</h2>
-              <p className="mt-1 text-sm text-muted-foreground">
+            <div className="rounded-xl border border-[#f0d86e]/40 bg-[linear-gradient(180deg,#FEF3BE_0%,#FECB03_100%)] p-6 shadow-xl text-slate-900">
+              <h2 className="text-xl font-semibold text-slate-900">Request a live demo</h2>
+              <p className="mt-1 text-sm text-slate-700">
                 Tell us about your organization and we'll reach out with a
                 personalized walkthrough.
               </p>
@@ -96,43 +96,43 @@ export default function Index() {
               ) : (
                 <form className="mt-6 grid gap-4" onSubmit={handleSubmit(onSubmit)}>
                   <div className="grid gap-2">
-                    <Label htmlFor="name" className="text-white font-semibold">Full name</Label>
-                    <Input id="name" placeholder="Jane Doe" className="bg-white/6 text-white placeholder:text-white/60 border-white/20 focus-visible:ring-white/40" {...register("name")} />
+                    <Label htmlFor="name" className="text-slate-900 font-semibold">Full name</Label>
+                    <Input id="name" placeholder="Jane Doe" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("name")} />
                     {errors.name && <FieldError message={errors.name.message} />}
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="email" className="text-white font-semibold">Work email</Label>
-                    <Input id="email" type="email" placeholder="jane@firm.com" className="bg-white/6 text-white placeholder:text-white/60 border-white/20 focus-visible:ring-white/40" {...register("email")} />
+                    <Label htmlFor="email" className="text-slate-900 font-semibold">Work email</Label>
+                    <Input id="email" type="email" placeholder="jane@firm.com" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("email")} />
                     {errors.email && <FieldError message={errors.email.message} />}
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="company" className="text-white font-semibold">Company</Label>
-                    <Input id="company" placeholder="Acme LLP" className="bg-white/6 text-white placeholder:text-white/60 border-white/20 focus-visible:ring-white/40" {...register("company")} />
+                    <Label htmlFor="company" className="text-slate-900 font-semibold">Company</Label>
+                    <Input id="company" placeholder="Acme LLP" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("company")} />
                     {errors.company && <FieldError message={errors.company.message} />}
                   </div>
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div className="grid gap-2">
-                      <Label htmlFor="role" className="text-white font-semibold">Role</Label>
-                      <Input id="role" placeholder="Partner, IT Lead, Counsel" className="bg-white/6 text-white placeholder:text-white/60 border-white/20 focus-visible:ring-white/40" {...register("role")} />
+                      <Label htmlFor="role" className="text-slate-900 font-semibold">Role</Label>
+                      <Input id="role" placeholder="Partner, IT Lead, Counsel" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("role")} />
                     </div>
                     <div className="grid gap-2">
-                      <Label htmlFor="teamSize" className="text-white font-semibold">Team size</Label>
-                      <Input id="teamSize" placeholder="25" className="bg-white/6 text-white placeholder:text-white/60 border-white/20 focus-visible:ring-white/40" {...register("teamSize")} />
+                      <Label htmlFor="teamSize" className="text-slate-900 font-semibold">Team size</Label>
+                      <Input id="teamSize" placeholder="25" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("teamSize")} />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div className="grid gap-2">
-                      <Label htmlFor="phone" className="text-white font-semibold">Phone (optional)</Label>
-                      <Input id="phone" placeholder="(555) 123‑4567" className="bg-white/6 text-white placeholder:text-white/60 border-white/20 focus-visible:ring-white/40" {...register("phone")} />
+                      <Label htmlFor="phone" className="text-slate-900 font-semibold">Phone (optional)</Label>
+                      <Input id="phone" placeholder="(555) 123‑4567" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("phone")} />
                     </div>
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="useCase" className="text-white font-semibold">Primary use case</Label>
-                    <Textarea id="useCase" placeholder="Briefly describe how your team shares sensitive documents today" className="bg-white/6 text-white placeholder:text-white/60 border-white/20 focus-visible:ring-white/40" {...register("useCase")} />
+                    <Label htmlFor="useCase" className="text-slate-900 font-semibold">Primary use case</Label>
+                    <Textarea id="useCase" placeholder="Briefly describe how your team shares sensitive documents today" className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-slate-200 focus-visible:ring-primary/40" {...register("useCase")} />
                   </div>
 
                   <fieldset className="grid gap-3">
-                    <legend className="text-sm font-medium">Compliance priorities</legend>
+                    <legend className="text-sm font-medium text-slate-800">Compliance priorities</legend>
                     <div className="grid gap-3 sm:grid-cols-3">
                       {(["HIPAA", "GDPR", "SOC 2"] as const).map((label) => (
                         <CheckboxItem key={label} value={label} register={register} />
@@ -141,8 +141,8 @@ export default function Index() {
                   </fieldset>
 
                   <div className="flex items-start gap-3">
-                    <input id="agree" type="checkbox" className="mt-1 h-4 w-4 rounded border-white/20 bg-transparent text-primary focus:ring-white/40 checked:bg-primary checked:border-primary" {...register("agreeToPrivacy")} />
-                    <Label htmlFor="agree" className="text-sm text-muted-foreground">
+                    <input id="agree" type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-400 bg-transparent text-primary focus:ring-primary checked:bg-primary checked:border-primary" {...register("agreeToPrivacy")} />
+                    <Label htmlFor="agree" className="text-sm text-slate-700">
                       I agree to the privacy policy and to be contacted about my
                       request.
                     </Label>
@@ -240,8 +240,8 @@ function CheckboxItem({ value, register }: { value: string; register: ReturnType
   const id = `comp-${value}`;
   return (
     <label htmlFor={id} className="flex cursor-pointer items-center gap-2 rounded-md border p-2 hover:bg-accent">
-      <input id={id} type="checkbox" value={value} className="h-4 w-4 rounded border-white/20 bg-transparent text-primary focus:ring-white/40 checked:bg-primary checked:border-primary" {...register("compliance")} />
-      <span className="text-sm">{value}</span>
+      <input id={id} type="checkbox" value={value} className="h-4 w-4 rounded border-slate-400 bg-transparent text-primary focus:ring-primary checked:bg-primary checked:border-primary" {...register("compliance")} />
+      <span className="text-sm text-slate-700">{value}</span>
     </label>
   );
 }
