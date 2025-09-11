@@ -355,7 +355,7 @@ export default function Index() {
           ].map((s) => (
             <div
               key={s.step}
-              className="rounded-xl border bg-card p-6 shadow-sm text-center"
+              className="rounded-xl border border-slate-200 bg-[#EFEFF5] p-6 shadow-xl text-center text-slate-900"
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold">
                 {s.step}
