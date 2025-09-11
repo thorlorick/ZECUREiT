@@ -292,10 +292,10 @@ export default function Index() {
 
       <section id="features" className="container py-16 md:py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:whitespace-nowrap text-white">
             Built for security, designed for simplicity
           </h2>
-          <p className="mt-3 text-muted-foreground">
+          <p className="mt-3 text-white md:whitespace-nowrap">
             ZECUREiT integrates seamlessly into your workflow while enforcing
             strong encryption and access controls.
           </p>
