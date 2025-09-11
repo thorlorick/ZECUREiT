@@ -107,7 +107,7 @@ export default function Index() {
                       <Input
                         id="name"
                         placeholder="Jane Doe"
-                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-[#d1e7df] shadow-md focus-visible:ring-primary/40"
+                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-slate-400 shadow-md focus-visible:ring-primary/40"
                         {...register("name")}
                       />
                       {errors.name && (
@@ -126,7 +126,7 @@ export default function Index() {
                         id="email"
                         type="email"
                         placeholder="jane@firm.com"
-                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-[#d1e7df] shadow-md focus-visible:ring-primary/40"
+                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-slate-400 shadow-md focus-visible:ring-primary/40"
                         {...register("email")}
                       />
                       {errors.email && (
@@ -144,7 +144,7 @@ export default function Index() {
                       <Input
                         id="company"
                         placeholder="Acme LLP"
-                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-[#d1e7df] shadow-md focus-visible:ring-primary/40"
+                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-slate-400 shadow-md focus-visible:ring-primary/40"
                         {...register("company")}
                       />
                       {errors.company && (
@@ -163,7 +163,7 @@ export default function Index() {
                         <Input
                           id="role"
                           placeholder="Partner, IT Lead, Counsel"
-                          className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-[#d1e7df] shadow-md focus-visible:ring-primary/40"
+                          className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-slate-400 shadow-md focus-visible:ring-primary/40"
                           {...register("role")}
                         />
                       </div>
@@ -177,7 +177,7 @@ export default function Index() {
                         <Input
                           id="teamSize"
                           placeholder="25"
-                          className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-[#d1e7df] shadow-md focus-visible:ring-primary/40"
+                          className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-slate-400 shadow-md focus-visible:ring-primary/40"
                           {...register("teamSize")}
                         />
                       </div>
@@ -194,7 +194,7 @@ export default function Index() {
                         <Input
                           id="phone"
                           placeholder="(555) 123‑4567"
-                          className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-[#d1e7df] shadow-md focus-visible:ring-primary/40"
+                          className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-slate-400 shadow-md focus-visible:ring-primary/40"
                           {...register("phone")}
                         />
                       </div>
@@ -210,7 +210,7 @@ export default function Index() {
                       <Textarea
                         id="useCase"
                         placeholder="Briefly describe how your team shares sensitive documents today"
-                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-[#d1e7df] shadow-md focus-visible:ring-primary/40"
+                        className="bg-white/95 text-slate-900 placeholder:text-slate-500 border-2 border-slate-400 shadow-md focus-visible:ring-primary/40"
                         {...register("useCase")}
                       />
                     </div>
@@ -355,7 +355,7 @@ export default function Index() {
           ].map((s) => (
             <div
               key={s.step}
-              className="rounded-xl border border-slate-200 bg-[#EFEFF5] p-6 shadow-xl text-center text-slate-900"
+              className="rounded-xl border border-slate-400 bg-[#EFEFF5] p-6 shadow-xl text-center text-slate-900"
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold">
                 {s.step}
@@ -380,7 +380,7 @@ function Feature({
   desc: string;
 }) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-[#EFEFF5] p-6 shadow-xl text-slate-900">
+    <div className="rounded-xl border border-slate-400 bg-[#EFEFF5] p-6 shadow-xl text-slate-900">
       <Icon className="h-6 w-6 text-primary" />
       <h3 className="mt-4 text-lg font-semibold">{title}</h3>
       <p className="mt-1 text-sm text-slate-700">{desc}</p>
