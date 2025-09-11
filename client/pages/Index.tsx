@@ -62,10 +62,8 @@ export default function Index() {
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white uppercase">
                 ENCRYPT FIRST, PROTECT ALWAYS
               </h1>
-              <p className="mt-4 text-lg text-white/90 max-w-3xl">
-                ZECUREiT safeguards your documents from the moment they’re
-                created, keeping client privilege secure and compliance
-                effortless.
+              <p className="mt-4 text-lg text-white/90 max-w-none md:whitespace-nowrap">
+                ZECUREiT safeguards your documents from the moment they’re created, keeping client privilege secure and compliance effortless.
               </p>
             </div>
           </div>
