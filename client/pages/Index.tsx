@@ -78,7 +78,7 @@ export default function Index() {
           <div className="grid gap-8 md:grid-cols-2 items-start">
             {/* Left: Form column (narrow) */}
             <div className="w-full md:max-w-md">
-              <div className="rounded-xl border border-[#f0d86e]/40 bg-[#D8F3E9] p-6 shadow-xl text-slate-900">
+              <div className="rounded-xl border border-[#f0d86e]/40 bg-[#EFEFF5] p-6 shadow-xl text-slate-900">
                 <h2 className="text-2xl font-semibold text-slate-900">
                   Request a live demo
                 </h2>
