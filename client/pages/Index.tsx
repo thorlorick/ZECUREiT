@@ -303,7 +303,7 @@ export default function Index() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <Feature
             icon={FileLock2}
-            title="Client��side encryption"
+            title="End to end encryption"
             desc="Documents are encrypted on your device before any upload or sync."
           />
           <Feature
