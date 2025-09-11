@@ -59,10 +59,10 @@ export default function Index() {
         <div className="container py-8 md:py-12 lg:py-16">
           <div className="min-h-[40vh] flex items-center">
             <div className="w-full">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white uppercase">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white uppercase md:whitespace-nowrap">
                 ENCRYPT FIRST, PROTECT ALWAYS
               </h1>
-              <p className="mt-4 text-lg text-white/90 max-w-3xl">
+              <p className="mt-4 text-lg text-white/90 max-w-3xl md:whitespace-nowrap">
                 ZECUREiT safeguards your documents from the moment they’re
                 created, keeping client privilege secure and compliance
                 effortless.
@@ -303,7 +303,7 @@ export default function Index() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <Feature
             icon={FileLock2}
-            title="Client‑side encryption"
+            title="Client��side encryption"
             desc="Documents are encrypted on your device before any upload or sync."
           />
           <Feature
