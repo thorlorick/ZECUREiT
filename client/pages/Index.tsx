@@ -380,7 +380,7 @@ function Feature({
   desc: string;
 }) {
   return (
-    <div className="rounded-xl border bg-card p-6 shadow-sm">
+    <div className="rounded-xl border border-slate-200 bg-[#EFEFF5] p-6 shadow-xl text-slate-900">
       <Icon className="h-6 w-6 text-primary" />
       <h3 className="mt-4 text-lg font-semibold">{title}</h3>
       <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
