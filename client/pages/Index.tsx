@@ -361,7 +361,7 @@ export default function Index() {
                 {s.step}
               </div>
               <h3 className="mt-4 text-lg font-semibold">{s.title}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>
+              <p className="mt-1 text-sm text-slate-700">{s.desc}</p>
             </div>
           ))}
         </div>
@@ -383,7 +383,7 @@ function Feature({
     <div className="rounded-xl border border-slate-200 bg-[#EFEFF5] p-6 shadow-xl text-slate-900">
       <Icon className="h-6 w-6 text-primary" />
       <h3 className="mt-4 text-lg font-semibold">{title}</h3>
-      <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
+      <p className="mt-1 text-sm text-slate-700">{desc}</p>
     </div>
   );
 }
