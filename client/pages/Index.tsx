@@ -1,4 +1,12 @@
-import { Check, Zap, DollarSign, ShieldCheck, UserPlus, MousePointer, Eye } from "lucide-react";
+import {
+  Check,
+  Zap,
+  DollarSign,
+  ShieldCheck,
+  UserPlus,
+  MousePointer,
+  Eye,
+} from "lucide-react";
 
 export default function Index() {
   return (
@@ -7,12 +15,20 @@ export default function Index() {
       <section id="hero" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">Small Business. Big Security.</h1>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">
+              Small Business. Big Security.
+            </h1>
             <p className="mt-6 text-lg sm:text-xl text-white/90">
-              Protect client, patient, and customer data with a single-click solution that’s affordable, compliance-ready (HIPAA, GDPR, FINRA), and requires no IT staff. Stop cyber threats before they stop your business.
+              Protect client, patient, and customer data with a single-click
+              solution that’s affordable, compliance-ready (HIPAA, GDPR, FINRA),
+              and requires no IT staff. Stop cyber threats before they stop your
+              business.
             </p>
             <div className="mt-8 flex justify-center">
-              <a href="#pricing" className="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50">
+              <a
+                href="#pricing"
+                className="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
+              >
                 Get Protected Today
               </a>
             </div>
@@ -27,7 +43,9 @@ export default function Index() {
             <div>
               <h2 className="text-3xl font-bold">Why This Matters</h2>
               <p className="mt-4 text-white/80">
-                Small teams are frequent targets for attackers. Reducing friction while enforcing strong protections keeps your people, clients, and reputation safe without adding operational burden.
+                Small teams are frequent targets for attackers. Reducing
+                friction while enforcing strong protections keeps your people,
+                clients, and reputation safe without adding operational burden.
               </p>
             </div>
 
@@ -38,7 +56,9 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Simple & Seamless</h3>
-                  <p className="text-white/80">One-login platform, integrates with your existing systems.</p>
+                  <p className="text-white/80">
+                    One-login platform, integrates with your existing systems.
+                  </p>
                 </div>
               </div>
 
@@ -48,7 +68,10 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Affordable & Low-Burden</h3>
-                  <p className="text-white/80">Implement enterprise-grade security without diverting funds from your core mission.</p>
+                  <p className="text-white/80">
+                    Implement enterprise-grade security without diverting funds
+                    from your core mission.
+                  </p>
                 </div>
               </div>
 
@@ -58,7 +81,10 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Compliance-Ready</h3>
-                  <p className="text-white/80">Meets standards like HIPAA, GDPR, FINRA so your business stays protected legally and ethically.</p>
+                  <p className="text-white/80">
+                    Meets standards like HIPAA, GDPR, FINRA so your business
+                    stays protected legally and ethically.
+                  </p>
                 </div>
               </div>
             </div>
@@ -72,7 +98,10 @@ export default function Index() {
           <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 items-center">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold">How It Works</h2>
-              <p className="mt-4 text-white/80">Protect sensitive data and meet regulatory standards effortlessly — no IT headaches, no extra staff required.</p>
+              <p className="mt-4 text-white/80">
+                Protect sensitive data and meet regulatory standards
+                effortlessly — no IT headaches, no extra staff required.
+              </p>
 
               <div className="mt-8 space-y-4">
                 <div className="flex items-start gap-4">
@@ -81,7 +110,9 @@ export default function Index() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Sign Up & Connect</h4>
-                    <p className="text-white/80">Quick setup with your existing tools.</p>
+                    <p className="text-white/80">
+                      Quick setup with your existing tools.
+                    </p>
                   </div>
                 </div>
 
@@ -91,7 +122,9 @@ export default function Index() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Single-Click Compliance</h4>
-                    <p className="text-white/80">Security and regulatory protection activated immediately.</p>
+                    <p className="text-white/80">
+                      Security and regulatory protection activated immediately.
+                    </p>
                   </div>
                 </div>
 
@@ -101,7 +134,9 @@ export default function Index() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Monitor & Protect</h4>
-                    <p className="text-white/80">Real-time alerts, minimal maintenance required.</p>
+                    <p className="text-white/80">
+                      Real-time alerts, minimal maintenance required.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -129,23 +164,37 @@ export default function Index() {
             <h2 className="text-3xl font-bold">Trusted by small teams</h2>
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               <blockquote className="rounded-xl bg-white/6 p-6">
-                <p className="text-white">“Finally, cybersecurity that doesn’t require a full IT department!”</p>
-                <cite className="mt-4 block text-sm text-white/80">— Law Firm Client</cite>
+                <p className="text-white">
+                  “Finally, cybersecurity that doesn’t require a full IT
+                  department!”
+                </p>
+                <cite className="mt-4 block text-sm text-white/80">
+                  — Law Firm Client
+                </cite>
               </blockquote>
 
               <blockquote className="rounded-xl bg-white/6 p-6">
-                <p className="text-white">“Affordable, easy to use, and keeps our practice HIPAA-compliant.”</p>
-                <cite className="mt-4 block text-sm text-white/80">— Medical Office Client</cite>
+                <p className="text-white">
+                  “Affordable, easy to use, and keeps our practice
+                  HIPAA-compliant.”
+                </p>
+                <cite className="mt-4 block text-sm text-white/80">
+                  — Medical Office Client
+                </cite>
               </blockquote>
 
               <div className="rounded-xl bg-white/6 p-6 flex flex-col items-center justify-center">
                 <p className="font-semibold">Client Logos</p>
                 <div className="mt-4 flex items-center gap-4">
                   <span className="px-3 py-1 rounded bg-white/8">Acme</span>
-                  <span className="px-3 py-1 rounded bg-white/8">Bright Health</span>
+                  <span className="px-3 py-1 rounded bg-white/8">
+                    Bright Health
+                  </span>
                   <span className="px-3 py-1 rounded bg-white/8">LawCo</span>
                 </div>
-                <div className="mt-4 text-sm text-white/80">Rated 4.9 / 5 by our customers</div>
+                <div className="mt-4 text-sm text-white/80">
+                  Rated 4.9 / 5 by our customers
+                </div>
               </div>
             </div>
           </div>
@@ -157,24 +206,34 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold">Simple Pricing, No Surprises</h2>
-            <p className="mt-4 text-white/80">Plans designed for small teams, fully scalable.</p>
+            <p className="mt-4 text-white/80">
+              Plans designed for small teams, fully scalable.
+            </p>
 
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               <div className="rounded-xl bg-white/6 p-6 text-left">
                 <h3 className="text-xl font-semibold">Starter</h3>
-                <p className="mt-2 text-white/80">Everything a small office needs to get protected quickly.</p>
+                <p className="mt-2 text-white/80">
+                  Everything a small office needs to get protected quickly.
+                </p>
                 <div className="mt-4 font-bold text-2xl">$29 / month</div>
               </div>
 
               <div className="rounded-xl bg-white/6 p-6 text-left">
                 <h3 className="text-xl font-semibold">Growth</h3>
-                <p className="mt-2 text-white/80">Scalable controls for growing teams and additional compliance needs.</p>
+                <p className="mt-2 text-white/80">
+                  Scalable controls for growing teams and additional compliance
+                  needs.
+                </p>
                 <div className="mt-4 font-bold text-2xl">$79 / month</div>
               </div>
             </div>
 
             <div className="mt-8">
-              <a href="#" className="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50">
+              <a
+                href="#"
+                className="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
+              >
                 Start Protecting Your Business Today
               </a>
             </div>
