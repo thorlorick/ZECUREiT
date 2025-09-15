@@ -130,14 +130,38 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="order-1 md:order-2 flex justify-center">
-              {/* Simple phone/mockup visual */}
-              <div className="relative w-64 h-128 rounded-3xl bg-gradient-to-b from-white/6 to-white/4 p-6 shadow-xl">
-                <div className="absolute inset-4 rounded-2xl bg-gradient-to-b from-black/80 to-transparent" />
-                <div className="relative z-10 h-full flex flex-col justify-between">
-                  <div className="h-10 w-20 rounded bg-white/8" />
-                  <div className="mx-auto w-40 h-64 rounded bg-gradient-to-b from-primary/30 to-transparent" />
-                  <div className="h-6 w-24 rounded bg-white/6 mx-auto" />
+            <div className="order-1 md:order-2 flex justify-center md:justify-end">
+              <div className="w-full md:w-96">
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="mt-1 rounded-lg bg-white/6 p-3">
+                      <Zap className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Simple &amp; Seamless</h3>
+                      <p className="text-white/80">One-login platform, integrates with your existing systems.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="mt-1 rounded-lg bg-white/6 p-3">
+                      <DollarSign className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Affordable &amp; Low-Burden</h3>
+                      <p className="text-white/80">Implement enterprise-grade security without diverting funds from your core mission.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="mt-1 rounded-lg bg-white/6 p-3">
+                      <ShieldCheck className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Compliance-Ready</h3>
+                      <p className="text-white/80">Meets standards like HIPAA, GDPR, FINRA so your business stays protected legally and ethically.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
