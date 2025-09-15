@@ -161,42 +161,24 @@ export default function Index() {
       {/* Testimonials / Social Proof */}
       <section id="testimonials" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl font-bold">Trusted by small teams</h2>
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-center">Trusted by small teams</h2>
+
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               <blockquote className="rounded-xl bg-white/6 p-6">
-                <p className="text-white">
-                  “Finally, cybersecurity that doesn’t require a full IT
-                  department!”
-                </p>
-                <cite className="mt-4 block text-sm text-white/80">
-                  — Law Firm Client
-                </cite>
+                <p className="text-white">“Before switching to ZECUREiT, we were juggling spreadsheets, patchy tools, and an overwhelming compliance checklist. Setup took less than an hour, and the single-login dashboard gave us immediate visibility — no IT team required. Within weeks we felt genuinely protected, and our partners noticed the difference in how confidently we handle client data.”</p>
+                <cite className="mt-4 block text-sm text-white/80">— Dr. Maya Rios, Clinic Director, BrightLeaf Medspa</cite>
               </blockquote>
 
               <blockquote className="rounded-xl bg-white/6 p-6">
-                <p className="text-white">
-                  “Affordable, easy to use, and keeps our practice
-                  HIPAA-compliant.”
-                </p>
-                <cite className="mt-4 block text-sm text-white/80">
-                  — Medical Office Client
-                </cite>
+                <p className="text-white">“We used to assume compliance was a full-time job. ZECUREiT changed that — it integrated with our practice management system seamlessly and made HIPAA compliance something our staff actually understands. The cost is reasonable, the admin work is minimal, and the peace of mind is priceless. It’s the easiest security decision we’ve made all year.”</p>
+                <cite className="mt-4 block text-sm text-white/80">— Alan Cho, Managing Partner, Harbor &amp; Cho Legal</cite>
               </blockquote>
 
-              <div className="rounded-xl bg-white/6 p-6 flex flex-col items-center justify-center">
-                <p className="font-semibold">Client Logos</p>
-                <div className="mt-4 flex items-center gap-4">
-                  <span className="px-3 py-1 rounded bg-white/8">Acme</span>
-                  <span className="px-3 py-1 rounded bg-white/8">
-                    Bright Health
-                  </span>
-                  <span className="px-3 py-1 rounded bg-white/8">LawCo</span>
-                </div>
-                <div className="mt-4 text-sm text-white/80">
-                  Rated 4.9 / 5 by our customers
-                </div>
-              </div>
+              <blockquote className="rounded-xl bg-white/6 p-6">
+                <p className="text-white">“A ransomware scare last year nearly shut us down. After implementing ZECUREiT, our exposure dropped immediately and audits became straightforward instead of stressful. The single-click protections and concise reporting let our small team stay focused on clients, not firefighting security issues — and the ROI was obvious within months.”</p>
+                <cite className="mt-4 block text-sm text-white/80">— Priya Nair, Operations Lead, NorthPoint Financial Advisors</cite>
+              </blockquote>
             </div>
           </div>
         </div>
