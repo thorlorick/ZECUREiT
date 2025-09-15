@@ -39,14 +39,58 @@ export default function Index() {
       {/* Value Proposition */}
       <section id="value" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto grid gap-10 md:grid-cols-2 items-center">
+          <div className="max-w-4xl mx-auto grid gap-10 md:grid-cols-2 items-start">
             <div>
               <h2 className="text-3xl font-bold">Why This Matters</h2>
-              <p className="mt-4 text-white/80">
-                Small teams are frequent targets for attackers. Reducing
-                friction while enforcing strong protections keeps your people,
-                clients, and reputation safe without adding operational burden.
-              </p>
+
+              <div className="mt-6 space-y-8 text-white/80">
+                <div>
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-primary/20 px-3 py-1 font-semibold">1</div>
+                    <h3 className="text-lg font-semibold">The Cybersecurity Gap</h3>
+                  </div>
+                  <p className="mt-3">
+                    SMBs face the same threats as large enterprises — without the same defenses. Cybercriminals know this and actively target them.
+                  </p>
+                  <p className="mt-2">
+                    46% of breaches hit companies under 1,000 employees, and 61% of SMBs were attacked in 2021. That number keeps rising.
+                  </p>
+                  <p className="mt-2">
+                    Top attack methods include Malware (18%), Phishing (17%), and Ransomware (10%).
+                  </p>
+                  <p className="mt-2 font-semibold">The reality: SMBs are on the front lines of today’s cyberwar — and most don’t even know it.</p>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-primary/20 px-3 py-1 font-semibold">2</div>
+                    <h3 className="text-lg font-semibold">Why You Need Protection</h3>
+                  </div>
+                  <p className="mt-3">
+                    Most SMBs remain underprepared. Limited budgets and the belief that they’re “too small to be targeted” leave businesses exposed.
+                  </p>
+                  <p className="mt-2">
+                    Cyberattacks aren’t just inconvenient — they can halt operations, destroy client trust, and cost hundreds of thousands of dollars to recover.
+                  </p>
+                  <p className="mt-2">Our solutions are designed to fill the protection gap and safeguard your business before it’s too late.</p>
+                  <p className="mt-2 font-semibold">The choice is simple: stay vulnerable, or partner with experts who keep you secure.</p>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-primary/20 px-3 py-1 font-semibold">3</div>
+                    <h3 className="text-lg font-semibold">The Cost of Inaction</h3>
+                  </div>
+                  <p className="mt-3">
+                    Breaches can be business-ending for SMBs. Global average breach cost: $4.44M.
+                  </p>
+                  <p className="mt-2">
+                    SMB incidents typically cost $826–$653K (95% of cases).
+                  </p>
+                  <p className="mt-2">Other research shows $120K–$1.24M just to respond and recover.</p>
+                  <p className="mt-2 font-semibold">For many small businesses, those costs aren’t just damaging — they’re fatal.</p>
+                </div>
+              </div>
             </div>
 
             <div className="space-y-6">
@@ -56,9 +100,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Simple & Seamless</h3>
-                  <p className="text-white/80">
-                    One-login platform, integrates with your existing systems.
-                  </p>
+                  <p className="text-white/80">One-login platform, integrates with your existing systems.</p>
                 </div>
               </div>
 
@@ -68,10 +110,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Affordable & Low-Burden</h3>
-                  <p className="text-white/80">
-                    Implement enterprise-grade security without diverting funds
-                    from your core mission.
-                  </p>
+                  <p className="text-white/80">Implement enterprise-grade security without diverting funds from your core mission.</p>
                 </div>
               </div>
 
@@ -81,10 +120,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Compliance-Ready</h3>
-                  <p className="text-white/80">
-                    Meets standards like HIPAA, GDPR, FINRA so your business
-                    stays protected legally and ethically.
-                  </p>
+                  <p className="text-white/80">Meets standards like HIPAA, GDPR, FINRA so your business stays protected legally and ethically.</p>
                 </div>
               </div>
             </div>
