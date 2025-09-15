@@ -8,15 +8,11 @@ export default function SiteHeader() {
           <span className="text-white font-semibold">AKCode</span>
         </div>
         <nav className="hidden gap-8 text-sm font-medium md:flex ml-auto">
-          <a href="#features" className="text-white/90 hover:text-white">
-            Features
-          </a>
-          <a href="#how-it-works" className="text-white/90 hover:text-white">
-            How it works
-          </a>
-          <a href="#security" className="text-white/90 hover:text-white">
-            Security
-          </a>
+          <a href="#hero" className="text-white/90 hover:text-white">Home</a>
+          <a href="#value" className="text-white/90 hover:text-white">Why This Matters</a>
+          <a href="#how-it-works" className="text-white/90 hover:text-white">How it Works</a>
+          <a href="#testimonials" className="text-white/90 hover:text-white">Testimonials</a>
+          <a href="#pricing" className="text-white/90 hover:text-white">Pricing</a>
         </nav>
       </div>
     </header>
