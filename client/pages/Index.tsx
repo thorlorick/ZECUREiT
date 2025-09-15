@@ -132,97 +132,24 @@ export default function Index() {
       {/* How It Works */}
       <section id="how-it-works" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 items-center">
-            <div className="order-2 md:order-1">
-              <h2 className="text-3xl font-bold">How It Works</h2>
-              <p className="mt-4 text-white/80">
-                Protect sensitive data and meet regulatory standards
-                effortlessly — no IT headaches, no extra staff required.
-              </p>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold">How It Works</h2>
+            <p className="mt-4 text-white/80">Simple &amp; Seamless, Affordable &amp; Low-Burden, Compliance-Ready — built to protect small businesses with minimal effort.</p>
 
-              <div className="mt-8 space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-md bg-white/6">
-                    <UserPlus className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Sign Up & Connect</h4>
-                    <p className="text-white/80">
-                      Quick setup with your existing tools.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-md bg-white/6">
-                    <MousePointer className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Single-Click Compliance</h4>
-                    <p className="text-white/80">
-                      Security and regulatory protection activated immediately.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-md bg-white/6">
-                    <Eye className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Monitor & Protect</h4>
-                    <p className="text-white/80">
-                      Real-time alerts, minimal maintenance required.
-                    </p>
-                  </div>
-                </div>
+            <div className="mt-8 grid gap-6 md:grid-cols-3">
+              <div className="rounded-xl bg-white/6 p-6">
+                <h3 className="font-semibold">Simple &amp; Seamless</h3>
+                <p className="mt-2 text-white/80">One-login platform, integrates with your existing systems.</p>
               </div>
-            </div>
 
-            <div className="order-1 md:order-2 flex justify-center md:justify-end">
-              <div className="w-full md:w-96">
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="mt-1 rounded-lg bg-white/6 p-3">
-                      <Zap className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">Simple &amp; Seamless</h3>
-                      <p className="text-white/80">
-                        One-login platform, integrates with your existing
-                        systems.
-                      </p>
-                    </div>
-                  </div>
+              <div className="rounded-xl bg-white/6 p-6">
+                <h3 className="font-semibold">Affordable &amp; Low-Burden</h3>
+                <p className="mt-2 text-white/80">Implement enterprise-grade security without diverting funds from your core mission.</p>
+              </div>
 
-                  <div className="flex items-start gap-4">
-                    <div className="mt-1 rounded-lg bg-white/6 p-3">
-                      <DollarSign className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">
-                        Affordable &amp; Low-Burden
-                      </h3>
-                      <p className="text-white/80">
-                        Implement enterprise-grade security without diverting
-                        funds from your core mission.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="mt-1 rounded-lg bg-white/6 p-3">
-                      <ShieldCheck className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">Compliance-Ready</h3>
-                      <p className="text-white/80">
-                        Meets standards like HIPAA, GDPR, FINRA so your business
-                        stays protected legally and ethically.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div className="rounded-xl bg-white/6 p-6">
+                <h3 className="font-semibold">Compliance-Ready</h3>
+                <p className="mt-2 text-white/80">Meets standards like HIPAA, GDPR, FINRA so your business stays protected legally and ethically.</p>
               </div>
             </div>
           </div>
