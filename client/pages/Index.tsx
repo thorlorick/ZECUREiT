@@ -7,7 +7,7 @@ export default function Index() {
       <section id="hero" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">Small Business. Big Security.</h1>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">Small Business. Big Security.</h1>
             <p className="mt-6 text-lg sm:text-xl text-white/90">
               Protect client, patient, and customer data with a single-click solution that’s affordable, compliance-ready (HIPAA, GDPR, FINRA), and requires no IT staff. Stop cyber threats before they stop your business.
             </p>
