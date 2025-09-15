@@ -39,11 +39,9 @@ export default function Index() {
       {/* Value Proposition */}
       <section id="value" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 items-start">
-            <div>
-              <h2 className="text-4xl font-extrabold text-left">Why This Matters</h2>
-              <p className="mt-4 text-white/80 text-left">Small teams are frequent targets for attackers. Reducing friction while enforcing strong protections keeps your people, clients, and reputation safe without adding operational burden.</p>
-            </div>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-extrabold text-left">Why This Matters</h2>
+            <p className="mt-4 text-white/80 text-left">Small teams are frequent targets for attackers. Reducing friction while enforcing strong protections keeps your people, clients, and reputation safe without adding operational burden.</p>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
               <article className="rounded-xl bg-white p-6 shadow-md">
@@ -106,11 +104,9 @@ export default function Index() {
       {/* Testimonials / Social Proof */}
       <section id="testimonials" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 items-start">
-            <div>
-              <h2 className="text-4xl font-extrabold text-left">Trusted by small teams</h2>
-              <p className="mt-4 text-white/80 text-left">Real customers, real outcomes — teams that lowered risk and simplified compliance without a big IT lift.</p>
-            </div>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-extrabold text-left">Trusted by small teams</h2>
+            <p className="mt-4 text-white/80 text-left">Real customers, real outcomes — teams that lowered risk and simplified compliance without a big IT lift.</p>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
               <article className="rounded-xl bg-white p-6 shadow-md">
@@ -135,13 +131,11 @@ export default function Index() {
       {/* Pricing / CTA */}
       <section id="pricing" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 items-start">
-            <div>
-              <h2 className="text-4xl font-extrabold text-left">Simple Pricing, No Surprises</h2>
-              <p className="mt-4 text-white/80 text-left">Plans designed for small teams, fully scalable.</p>
-            </div>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-extrabold text-left">Simple Pricing, No Surprises</h2>
+            <p className="mt-4 text-white/80 text-left">Plans designed for small teams, fully scalable.</p>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="rounded-xl bg-white p-6 shadow-md text-left">
                 <h3 className="text-2xl font-bold text-slate-900">Starter</h3>
                 <p className="mt-3 text-slate-700">Everything a small office needs to get protected quickly.</p>
@@ -153,9 +147,15 @@ export default function Index() {
                 <p className="mt-3 text-slate-700">Scalable controls for growing teams and additional compliance needs.</p>
                 <div className="mt-4 font-bold text-2xl text-slate-900">$79 / month</div>
               </div>
+
+              <div className="rounded-xl bg-white p-6 shadow-md text-left">
+                <h3 className="text-2xl font-bold text-slate-900">Enterprise</h3>
+                <p className="mt-3 text-slate-700">Custom plans and dedicated support for larger organizations — contact sales to learn more.</p>
+                <div className="mt-4 font-bold text-2xl text-slate-900">Contact us</div>
+              </div>
             </div>
 
-            <div className="md:col-span-2 mt-8 text-center">
+            <div className="mt-8 text-center">
               <a
                 href="#"
                 className="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
