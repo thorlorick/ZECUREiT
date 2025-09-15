@@ -132,24 +132,26 @@ export default function Index() {
       {/* How It Works */}
       <section id="how-it-works" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold">How It Works</h2>
-            <p className="mt-4 text-white/80">Simple &amp; Seamless, Affordable &amp; Low-Burden, Compliance-Ready — built to protect small businesses with minimal effort.</p>
+          <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 items-start">
+            <div>
+              <h2 className="text-4xl font-extrabold">How It Works</h2>
+              <p className="mt-4 text-white/80">Simple, effective protections designed for small teams — no heavy lift, no dedicated IT required.</p>
+            </div>
 
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
-              <div className="rounded-xl bg-white/6 p-6">
-                <h3 className="font-semibold">Simple &amp; Seamless</h3>
-                <p className="mt-2 text-white/80">One-login platform, integrates with your existing systems.</p>
+            <div className="space-y-6">
+              <div className="rounded-xl bg-white p-6 shadow-md">
+                <h3 className="text-2xl font-bold text-slate-900">Simple &amp; Seamless</h3>
+                <p className="mt-3 text-slate-700">No complex setups, no steep learning curves. Our single-login platform integrates smoothly with the systems you already use, giving you enterprise-level protection without disrupting your workflow.</p>
               </div>
 
-              <div className="rounded-xl bg-white/6 p-6">
-                <h3 className="font-semibold">Affordable &amp; Low-Burden</h3>
-                <p className="mt-2 text-white/80">Implement enterprise-grade security without diverting funds from your core mission.</p>
+              <div className="rounded-xl bg-white p-6 shadow-md">
+                <h3 className="text-2xl font-bold text-slate-900">Affordable &amp; Low-Burden</h3>
+                <p className="mt-3 text-slate-700">Security shouldn’t drain your budget or your team’s time. Our solution delivers enterprise-grade protection at a price built for small businesses, with minimal admin work so you can stay focused on your mission.</p>
               </div>
 
-              <div className="rounded-xl bg-white/6 p-6">
-                <h3 className="font-semibold">Compliance-Ready</h3>
-                <p className="mt-2 text-white/80">Meets standards like HIPAA, GDPR, FINRA so your business stays protected legally and ethically.</p>
+              <div className="rounded-xl bg-white p-6 shadow-md">
+                <h3 className="text-2xl font-bold text-slate-900">Compliance-Ready</h3>
+                <p className="mt-3 text-slate-700">From healthcare to legal to financial services, compliance isn’t optional. Our platform is built to help you meet HIPAA, GDPR, FINRA, and other regulatory requirements — keeping client data safe and your business shielded from costly fines and reputational damage.</p>
               </div>
             </div>
           </div>
