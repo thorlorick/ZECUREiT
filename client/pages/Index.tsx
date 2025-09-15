@@ -132,13 +132,13 @@ export default function Index() {
       {/* How It Works */}
       <section id="how-it-works" className="min-h-screen flex items-center">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div>
               <h2 className="text-4xl font-extrabold text-left">How It Works</h2>
               <p className="mt-4 text-white/80 text-left">Simple, effective protections designed for small teams — no heavy lift, no dedicated IT required.</p>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="rounded-xl bg-white p-6 shadow-md">
                 <h3 className="text-2xl font-bold text-slate-900">Simple &amp; Seamless</h3>
                 <p className="mt-3 text-slate-700">No complex setups, no steep learning curves. Our single-login platform integrates smoothly with the systems you already use, giving you enterprise-level protection without disrupting your workflow.</p>
